@@ -1,81 +1,88 @@
 ---
 title: Home
 sections:
-  - type: heroblock
-    title: 'Hi, I''m Stackbit Exto Portfolio Theme.'
-    section_id: hero
-    component: HeroBlock
+  - component: HeroBlock
     content: >-
-      This section can contain a subtitle or tagline. The recommended length is
-      one to three sentences, but can be changed as you prefer.
-  - type: portfolioblock
-    title: Recent Work
-    section_id: latest-projects
-    component: PortfolioBlock
-    subtitle: An optional subtitle of the section
-    layout_style: mosaic
+      Project updates arrive at the same time each week, we share our expertise
+      openly, and our sprints are on time, every time. As you develop trust in
+      our delivery, your focus will shift to creativity, strategy, and
+      profitability with each successive project.
+    section_id: hero
+    title: 'Digital Products, with ambition'
+    type: heroblock
+  - component: PortfolioBlock
+    layout_style: tiles
     num_projects_displayed: 6
+    section_id: projects
+    subtitle: Some of the projects we're most proud of
+    title: 2018 Highlights
+    type: portfolioblock
     view_all_text: View All
     view_all_url: portfolio/index.html
-  - type: servicesblock
-    title: What We Do
+  - component: ServicesBlock
     section_id: services
-    component: ServicesBlock
-    subtitle: An optional subtitle of the section
     serviceslist:
-      - title: Service Title
-        content: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl
-          ligula, cursus id molestie vel, maximus aliquet risus. Vivamus in nibh
-          fringilla, fringilla tortor at, pulvinar orci.
-      - title: Service Title
-        content: >-
-          Donec lobortis velit sed suscipit lobortis. Ut non quam metus. Nullam
-          a maximus mi. Quisque justo nunc, sollicitudin euismod euismod at,
-          tincidunt ut tellus. Vivamus rhoncus mattis varius. 
-      - title: Service title
-        content: >-
-          Vestibulum a nunc ut eros condimentum posuere. Nullam dapibus quis
-          nunc non interdum. Pellentesque tortor ligula, gravida ac commodo eu.
-      - title: Service title
-        content: >-
-          Aliquam pulvinar, orci ac scelerisque tempus, felis leo sagittis
-          justo, sit amet condimentum lorem nibh vel quam. Duis consectetur
-          lorem ipsum, non efficitur urna viverra et.
-  - type: testimonialsblock
-    title: Testimonials
+      - content: >-
+          Organisations overhaul their website every 3-5 years. Whether it's to
+          uplift their brand and inspire their teams, or because your old
+          website is too old and broken to build on, our website overhauls are
+          truly a cut above the rest.
+        title: 'Branded Websites, and some'
+      - content: >-
+          When companies want to optimise their operations, they move their
+          services online. We use React.js to build bespoke Web Applications
+          that have transformed startups and banks alike. (We'll also work with
+          Vue.js and vanilla js, Node js and static site generators)
+        title: Frontend Web Development
+      - content: >-
+          When organisations feel like there's more their team can achieve with
+          less effort, they pull in consultants. Industry best practices being
+          our norm, we can help your colleagues find their way there too.
+        title: Development Team Coaching
+      - content: >-
+          As digital transformation becomes part of most managers' lives, a
+          deeper understanding of how the web works becomes an advantage. Take a
+          course with us and get to grips with the key concepts behind web
+          development.
+        title: Digital Skills Training
+    subtitle: Full service web consultancy
+    title: What We Do
+    type: servicesblock
+  - component: TestimonialsBlock
     section_id: testimonials
-    component: TestimonialsBlock
     subtitle: An optional subtitle of the section
     testimonialslist:
-      - author: John Doe
+      - author: Stefano Marrone
         avatar: images/john_doe.jpg
         content: >-
           Vestibulum a nunc ut eros condimentum posuere. Nullam dapibus quis
           nunc non interdum. Pellentesque tortor ligula, gravida ac commodo eu.
-      - author: Jane Roe
+      - author: Duncan Johnson
         avatar: images/jane_roe.jpg
         content: >-
           Sed laoreet magna commodo libero euismod sodales. Nunc ac libero
           convallis, interdum ligula vel, pretium diam. Integer commodo sem at
           dui sollicitudin, vel posuere justo laoreet.
-  - type: postsblock
-    title: Latest from the Blog
-    section_id: latest-posts
-    component: PostsBlock
-    subtitle: An optional subtitle of the section
-    num_posts_displayed: 2
-    actions:
+    title: Testimonials
+    type: testimonialsblock
+  - actions:
       - label: View Blog
         url: blog/index.html
-  - type: contactblock
-    title: Contact Us
-    section_id: contact
-    component: ContactBlock
+    component: PostsBlock
+    num_posts_displayed: 3
+    section_id: latest-posts
     subtitle: An optional subtitle of the section
+    title: Latest from the Blog
+    type: postsblock
+  - component: ContactBlock
+    section_id: contact
+    subtitle: You know the drill.
+    title: Want to speak to a human?
+    type: contactblock
 menus:
   main:
     title: Home
     weight: 1
 template: home
 ---
+
