@@ -1,20 +1,20 @@
 {
-  "title": "Stackbit Exto Theme",
+  "title": "Calibre Digital // Web Consultants || Web Developers",
   "color_scheme": "dark",
-  "accent_color": "pink",
+  "accent_color": "green",
   "header": {
-    "title": "Exto",
+    "title": "Calibre",
     "has_nav": true
   },
   "footer": {
-    "content": "&copy; Stackbit-Exto. All rights reserved.",
+    "content": "&copy; Calibre Digital Limited. All rights reserved.",
     "links": [
       {
-        "text": "Made with Stackbit",
-        "url": "https://www.stackbit.com",
+        "text": "",
+        "url": "",
         "new_window": true
       }
     ],
-    "has_social": true
+    "has_social": false
   }
 }
