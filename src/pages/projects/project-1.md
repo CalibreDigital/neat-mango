@@ -17,9 +17,9 @@ They chose Calibre because our bespoke proposal drew from our experience with ar
 Subutai was an InsurTech startup that raised funding nearly a year prior. Their first cybersecurity product scanned millions of data points to generate visualisations on the fly, and was used to determine the risk profile of an enterprise from an insurance perspective.
 
 > "Jerome understood our business within just 3 hours and immediately set about making the most high-impact changes. Weeks later we had a process to design & build a winning product for the first time as a company.\
+> - Rufus Herner
 >
-> * Rufus Herner\
-> * Co-founder, Product Owner"
+> \- Co-founder, Product Owner"
 
 ## When the Product and Engineering aren’t communicating well, create a language they both understand.
 
@@ -49,4 +49,4 @@ A **DevOps** studio for continuous integration and deployment pipelines.
 
 ## Calibre Tip
 
-> "When needing a niche expert to help us, codementor.io has helped us countless times and we recommend you check it out. For this project, we found an Elasticsearch expert on the platform and she was happy to help us figure anything out. - Rufus Herner - Co-founder, Product Owner"
+> "When needing a niche expert to help us, codementor.io has helped us countless times and we recommend you check it out. For this project, we found an Elasticsearch expert on the platform and she was happy to help us figure anything out.<br/>- Rufus Herner<br/> - Co-founder, Product Owner"
