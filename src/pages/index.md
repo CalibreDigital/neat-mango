@@ -11,7 +11,7 @@ sections:
     title: 'Digital Products, with ambition'
     type: heroblock
   - component: PortfolioBlock
-    layout_style: tiles
+    layout_style: mosaic
     num_projects_displayed: 6
     section_id: projects
     subtitle: Some of the projects we're most proud of
@@ -69,7 +69,7 @@ sections:
       - label: View Blog
         url: blog/index.html
     component: PostsBlock
-    num_posts_displayed: 3
+    num_posts_displayed: 1
     section_id: latest-posts
     subtitle: An optional subtitle of the section
     title: Latest from the Blog
