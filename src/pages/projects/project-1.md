@@ -17,9 +17,8 @@ They chose Calibre because our bespoke proposal drew from our experience with ar
 Subutai was an InsurTech startup that raised funding nearly a year prior. Their first cybersecurity product scanned millions of data points to generate visualisations on the fly, and was used to determine the risk profile of an enterprise from an insurance perspective.
 
 > "Jerome understood our business within just 3 hours and immediately set about making the most high-impact changes. Weeks later we had a process to design & build a winning product for the first time as a company.\
-> - Rufus Herner
->
-> \- Co-founder, Product Owner"
+> - Rufus Herner\
+> - Co-founder, Product Owner"
 
 ## When the Product and Engineering aren’t communicating well, create a language they both understand.
 
