@@ -1,9 +1,9 @@
 ---
-title: Project Title 5
-subtitle: Optional Project Subtitle
-date: '2019-01-05'
-thumb_img_path: images/5_thumb.jpg
-content_img_path: images/5.jpg
+title: Rockpool Investments
+subtitle: Rebranding their digital identity
+date: '2018-01-05'
+thumb_img_path: images/logos/Rockpool_Logo_Copy.png
+content_img_path: images/demo1.jpg
 template: project
 ---
 

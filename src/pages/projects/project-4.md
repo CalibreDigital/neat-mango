@@ -1,9 +1,9 @@
 ---
-title: Project Title 4
+title: Berenberg
 subtitle: Optional Project Subtitle
 date: '2019-02-26'
-thumb_img_path: images/4_thumb.jpg
-content_img_path: images/4.jpg
+thumb_img_path: images/logos/Berenberg_Logo_Copy.png
+content_img_path: images/demo1.jpg
 template: project
 ---
 

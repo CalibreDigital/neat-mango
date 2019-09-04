@@ -21,7 +21,7 @@ export default class Project extends React.Component {
                   </header>
                   {_.get(this.props, 'pageContext.frontmatter.content_img_path') && 
                   <div className="post-thumbnail">
-                    <img src={safePrefix(_.get(this.props, 'pageContext.frontmatter.content_img_path'))} alt={_.get(this.props, 'pageContext.frontmatter.title')} />
+                    <img class="project-headerimage" src={safePrefix(_.get(this.props, 'pageContext.frontmatter.content_img_path'))} alt={_.get(this.props, 'pageContext.frontmatter.title')} />
                   </div>
                   }
                   <div className="post-content inner-small">

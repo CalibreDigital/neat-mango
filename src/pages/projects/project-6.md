@@ -1,9 +1,9 @@
 ---
-title: Project Title 6
+title: Nucco Brain
 subtitle: Optional Project Subtitle
 date: '2018-12-18'
-thumb_img_path: images/6_thumb.jpg
-content_img_path: images/6.jpg
+thumb_img_path: images/logos/NuccoBrain_Logo_Copy.png
+content_img_path: images/demo1.jpg
 template: project
 ---
 

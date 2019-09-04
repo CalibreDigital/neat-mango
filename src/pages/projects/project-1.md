@@ -3,9 +3,9 @@ title: Subutai
 subtitle: >-
   Consultancy, Agile Coaching, Tech Architecture, Product Design, React,
   GraphQL, Elasticsearch
-date: '2019-05-10'
-thumb_img_path: images/1_thumb.jpg
-content_img_path: images/1.jpg
+date: '2019-01-04'
+thumb_img_path: images/logos/ESCLabs_Logo_Copy.png
+content_img_path: images/logos/ESCLabs_Logo_Copy.png
 template: project
 ---
 Subutai was building version 4 of their product, and it had to transform the company from no revenue to a profitable business.
@@ -16,8 +16,8 @@ They chose Calibre because our bespoke proposal drew from our experience with ar
 
 Subutai was an InsurTech startup that raised funding nearly a year prior. Their first cybersecurity product scanned millions of data points to generate visualisations on the fly, and was used to determine the risk profile of an enterprise from an insurance perspective.
 
-> "Jerome understood our business within just 3 hours and immediately set about making the most high-impact changes. Weeks later we had a process to design & build a winning product for the first time as a company.\
-> - Rufus Herner\
+> "Jerome understood our business within just 3 hours and immediately set about making the most high-impact changes. Weeks later we had a process to design & build a winning product for the first time as a company.
+> - Rufus Herner
 > - Co-founder, Product Owner"
 
 ## When the Product and Engineering aren’t communicating well, create a language they both understand.

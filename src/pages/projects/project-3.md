@@ -1,9 +1,9 @@
 ---
-title: Project Title 3
-subtitle: Optional Project Subtitle
+title: DeepMind
+subtitle: Corp Comms
 date: '2019-04-08'
-thumb_img_path: images/3_thumb.jpg
-content_img_path: images/3.jpg
+thumb_img_path: images/logos/DeepMind_Logo_Copy.png
+content_img_path: images/demo1.jpg
 template: project
 ---
 

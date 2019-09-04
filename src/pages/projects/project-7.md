@@ -1,9 +1,9 @@
 ---
-title: Project Title 7
+title: Financial Times
 subtitle: Optional Project Subtitle
-date: '2018-01-15'
-thumb_img_path: images/7_thumb.jpg
-content_img_path: images/7.jpg
+date: '2018-12-17'
+thumb_img_path: images/logos/FinancialTimes_Logo_Copy.png
+content_img_path: images/demo1.jpg
 template: project
 ---
 
