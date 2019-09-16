@@ -1,5 +1,13 @@
-stackbitVersion: ~0.2.39
+stackbitVersion: ~0.2.0
+ssgName: gatsby
+ssgVersion: 0.1.12
+buildCommand: ./ssg-build.sh
+publishDir: public
+staticDir: static
 uploadDir: images
+dataDir: src/data
+pagesDir: src/pages
+pageLayoutKey: template
 metadata:
   title: Exto
   description: A portfolio theme with a blog
@@ -8,6 +16,11 @@ metadata:
   images:
     small: images/demo-256x192.png
     large: images/demo-1024x768.png
+stackbit_banner:
+  show_banner: true
+  name: Exto
+  create_url: 'https://app.stackbit.com/create?theme=exto'
+  github_url: 'https://github.com/stackbithq/stackbit-theme-exto'
 models:
   config:
     type: config
@@ -586,21 +599,3 @@ models:
         description: >-
           The identifier of a menu item could be used as a parent menu of
           another menu item
-stackbit_banner:
-  show_banner: true
-  name: Exto
-  create_url: 'https://app.stackbit.com/wizard?theme=exto'
-  github_url: 'https://github.com/stackbithq/stackbit-theme-exto'
-ssgName: gatsby
-publishDir: public
-buildCommand: ./ssg-build.sh
-injectLocations:
-  htmlHead:
-    file: src/components/Layout.js
-    tagName: Helmet
-  htmlBody:
-    file: gatsby-ssr.js
-    tokens:
-      - '\{\/\* put additional scripts here \*\/\}'
-    tokenIndex: 0
-    location: replace
