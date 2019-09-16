@@ -686,9 +686,6 @@ collections:
   - name: page
     label: Pages
     folder: src/pages/
-    filter:
-      field: template
-      value: page
     create: true
     extension: md
     slug: '{{slug}}'
@@ -748,12 +745,12 @@ collections:
         label: Content
         required: false
         hint: Page content
+    filter:
+      field: template
+      value: page
   - name: post
     label: Posts
     folder: src/pages/posts
-    filter:
-      field: template
-      value: post
     create: true
     extension: md
     slug: '{{slug}}'
@@ -827,12 +824,12 @@ collections:
         label: Content
         required: false
         hint: Page content
+    filter:
+      field: template
+      value: post
   - name: project
     label: Projects
     folder: src/pages/projects
-    filter:
-      field: template
-      value: project
     create: true
     extension: md
     slug: '{{slug}}'
@@ -901,6 +898,9 @@ collections:
         label: Content
         required: false
         hint: Page content
+    filter:
+      field: template
+      value: project
   - name: site_menus
     label: Site Menus
     files:
