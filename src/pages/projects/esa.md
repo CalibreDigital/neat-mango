@@ -12,6 +12,8 @@ MOVE ABOVE: The European Space Agency | Business Applications were looking to ga
 
 Calibre were put forward by ESAs Visual Storytelling Studio - Nucco Brain, because we could deliver UX research, onboard a Drupal developer, and work with enterprise-grade development environments.
 
+By the end of the project, we achieved XXXXX
+
 > Redesign this blue line section
 >“Calibre was able to make the project look simple and approachable to external stakeholders, whilst delivering a UX-driven and technically complex project under the hood. There aren’t many studios that could be as flexible and dynamic as Calibre.“ 
 > - Natasha Wheatley
