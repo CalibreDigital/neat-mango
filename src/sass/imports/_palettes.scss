@@ -2,82 +2,6 @@
  * Palettes
  * ----------------------------------------------------------------------------
  */
- .palette-dark-custom {
-  #masthead {
-   background: _palette(primary);
-   color: _palette(primary-alt);
- 
-   pre,
-   hr,
-   th,
-   td,
-   input[type="text"],
-   input[type="password"],
-   input[type="email"],
-   input[type="tel"],
-   input[type="search"],
-   input[type="url"],
-   select,
-   textarea,
-   .site-header,
-   .site-footer,
-   .contact-block,
-   .service-counter:before,
-   .service-counter:after {
-     border-color: _palette(border-alt);
-   }
- 
-   h1,
-   h2,
-   h3,
-   h4,
-   h5,
-   h6,
-   blockquote,
-   th,
-   label {
-     color: #fff;
-   }
- 
-   a:not(.button):hover,
-   a:not(.button):focus,
-   .site-navigation,
-   .site-footer,
-   .post-subtitle { 
-     color: _palette(primary-alt);
-   }
- 
-   caption,
-   .block-subtitle,
-   .hero-block .block-content,
-   .page-subtitle,
-   .testimonial-author {
-     color: _palette(meta);
-   }
-  
-   @media only screen and (max-width: 800px) {
-     .site-header:before {
-       background: rgba(darken(_palette(primary), 15%),.6);
-     }
- 
-     .site-navigation {
-       background:_palette(primary);
- 
-       .menu-item,
-       .menu-item:first-child {
-         border-color: _palette(border-alt);
-       }
-     }
-   }
-  } 
- }
-
-
-
-
-
-
-
  .palette-dark {
   background: _palette(primary);
   color: _palette(primary-alt);
@@ -145,7 +69,6 @@
     }
   }
 }
-  
 
 /* Green accent color */
 .accent-green {

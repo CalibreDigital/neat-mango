@@ -1,8 +1,8 @@
 ---
 title: Blog
-<!-- menus:
+menus:
   main:
     title: Blog
-    weight: 3 -->
+    weight: 3
 template: blog
 ---
