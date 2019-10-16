@@ -60,8 +60,8 @@ exports.onCreateNode = ({node, getNode, actions}, options) => {
     }
 };
 
-exports.createPages = ({graphql, getNode, actions}) => {
-    const {createPage} = actions;
+exports.createPages = ({graphql, getNode, actions, getNodesByType}) => {
+    const {createPage, deletePage} = actions;
 
     // Use GraphQL to bring only the "id" and "html" (added by gatsby-transformer-remark)
     // properties of the MarkdownRemark nodes. Don't bring additional fields
@@ -88,6 +88,8 @@ exports.createPages = ({graphql, getNode, actions}) => {
         const nodes = result.data.allMarkdownRemark.edges.map(({node}) => node);
         const siteNode = getNode('Site');
         const siteDataNode = getNode('SiteData');
+        const sitePageNodes = getNodesByType('SitePage');
+        const sitePageNodesByPath = _.keyBy(sitePageNodes, 'path');
 
         const pages = nodes.map(graphQLNode => {
             // Use the node id to get the underlying node. It is not exactly the
@@ -110,7 +112,13 @@ exports.createPages = ({graphql, getNode, actions}) => {
             const url = node.fields.url;
             const template = node.frontmatter.template;
             const component = path.resolve(`./src/templates/${template}.js`);
-            createPage({
+
+            const existingPageNode = _.get(sitePageNodesByPath, url);
+            if (existingPageNode) {
+                deletePage(existingPageNode);
+            }
+
+            const page = {
                 path: url,
                 component: component,
                 context: {
@@ -128,7 +136,13 @@ exports.createPages = ({graphql, getNode, actions}) => {
                         data: _.get(siteDataNode, 'data', null)
                     }
                 }
-            });
+            };
+
+            if (existingPageNode && !_.get(page, 'context.menus')) {
+                page.context.menus = _.get(existingPageNode, 'context.menus');
+            }
+
+            createPage(page);
         });
     });
 };
