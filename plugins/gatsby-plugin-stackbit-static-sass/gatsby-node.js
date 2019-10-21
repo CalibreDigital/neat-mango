@@ -1,11 +1,13 @@
 const sass = require('node-sass');
 const sassUtils = require('node-sass-utils')(sass);
 const fse = require('fs-extra');
+const systemPath = require('path');
+const chokidar = require('chokidar');
 
-exports.onPostBootstrap = ({getNode}, configOptions) => {
+const renderSass = (getNode, { inputFile, outputFile }) => {
     let result = sass.renderSync({
-        file: configOptions.inputFile,
-        outFile: configOptions.outputFile,
+        file: inputFile,
+        outFile: outputFile,
         functions: {
             "getPaletteKey($key)": function(sassKey) {
                 function hexToRgb(hex) {
@@ -14,7 +16,7 @@ exports.onPostBootstrap = ({getNode}, configOptions) => {
                     hex = hex.replace(shorthandRegex, function(m, r, g, b) {
                         return r + r + g + g + b + b;
                     });
-        
+
                     let result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
                     return result ? {
                         r: parseInt(result[1], 16),
@@ -38,5 +40,19 @@ exports.onPostBootstrap = ({getNode}, configOptions) => {
             }
         }
     });
-    fse.outputFileSync(configOptions.outputFile, result.css);
+    fse.outputFileSync(outputFile, result.css);
+    console.log(`Compiled ${outputFile} from ${inputFile}`);
+};
+
+exports.sourceNodes = ({ store, getNode }, configOptions) => {
+    const state = store.getState()
+    const { program } = state
+
+    chokidar
+        .watch(systemPath.join(program.directory, '**/*.scss'))
+        .on(`change`, () => renderSass(getNode, configOptions));
+};
+
+exports.onPostBootstrap = ({ getNode }, configOptions) => {
+    renderSass(getNode, configOptions);
 };
